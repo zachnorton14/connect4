@@ -166,7 +166,7 @@ public class ConnectGUI extends JFrame implements ActionListener {
 
         if (args.length != 3) {
             
-            System.out.println("Usage: java -cp bin ConnectGUI gridSize" + 
+            System.out.println("Usage: java -cp bin ConnectGUI gridSize " + 
                     "winConnectedPieces numPlayers");
             validArgs = false;
         }
