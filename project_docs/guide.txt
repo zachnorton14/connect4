@@ -1,0 +1,19 @@
+compile:
+$ javac -d bin src/Cell.java
+$ javac -d bin -cp bin src/Grid.java
+$ javac -d bin -cp bin src/Player.java
+$ javac -d bin -cp bin src/Connect.java
+$ javac -d bin -cp bin src/ConnectGUI.java
+
+run:
+$ java -cp bin ConnectGUI (*NEED COMMAND LINE ARGUMENTS*)
+
+compile all:
+$ javac -d bin -cp bin src/.*java
+
+stylechecker:
+$ ~/cs-checkstyle/checkstyle src/Cell.java
+$ ~/cs-checkstyle/checkstyle src/Grid.java
+$ ~/cs-checkstyle/checkstyle src/Player.java
+$ ~/cs-checkstyle/checkstyle src/Connect.java
+$ ~/cs-checkstyle/checkstyle src/ConnectGUI.java
