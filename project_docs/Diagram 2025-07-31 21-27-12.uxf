@@ -1,0 +1,74 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>280</x><y>160</y><w>310</w><h>460</h></coordinates><panel_attributes>_Connect_
+--
+_+MIN_PLAYERS: int = 2_
+_+MAX_PLAYERS: int = 4_
+_+MAX_INDEX: int = 5_
+-turnNum: int
+-numPlayers: int
+-gridSize: int
+-winConnectedPieces: int
+-isGameOverWithWinner: boolean
+-isGameOverTie: boolean
+-players: Player[]
+-grid: Grid
+-currentPlayer: Player
+--
++Connect(int, int, int)
++determineCurrentPlayer(int): void
++determineStatus(Player): Status
++placePiece(int): int
++findMatchingPieces(int, int, Status): int
+-findHorizontalConnectedPieces(int, int, Status): int
+-findDownConnectedPieces(int, int, Status): int
+-findLeftDiagonalConnectedPieces(int, int, Status): int
+-findRightDiagonalConnectedPieces(int, int, Status): int
++getIsGameOverWithWinner(): boolean
++getIsGameOverTie(): boolean
++getGrid(): Grid
++getCurrentPlayer(): Player
++getPlayerAtIndex(int): Player
++replay(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>250</y><w>210</w><h>70</h></coordinates><panel_attributes>_ConnectGUI_
+--
++ConnectGUI(int, int, int)
+_+main(String): void_
++actionListener(ActionEvent): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>440</y><w>210</w><h>190</h></coordinates><panel_attributes>_Grid_
+--
+_-MAX_SIZE: int = 16_
+-size: int 
+-grid: Cell[][]
+--
++Grid(int)
++getSize(): int
++getGrid(): Cell[][]
++getStatus(int, int): Status
++updateStatus(int, int, Status): void
++equals(Object): boolean
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>190</y><w>210</w><h>170</h></coordinates><panel_attributes>_Player_
+--
+-maxConnected: int
+-score: int
+--
++Player()
++getMaxConnected(): int
++getScore(): int
++setMaxConnected(int): void
++increaseScore(): void
++equals(Object): boolean
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1010</x><y>410</y><w>210</w><h>110</h></coordinates><panel_attributes>_Cell_
+--
+-status: Status
+--
++Cell()
++getStatus(): Status
++setStatus(Status): void
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1010</x><y>230</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Status
+--
+EMPTY
+PLAYER_1
+PLAYER_2
+PLAYER_3
+PLAYER_4</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>480</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=*
+m2=1
+grid</panel_attributes><additional_attributes>120;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>340</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>500</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>270</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>280</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element></diagram>
