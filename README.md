@@ -23,27 +23,23 @@ This version of Connect4, was meant to exercise the stengths and limitations of 
 </br>
 
 ![Normal Connect4 game example](project-photos/Normal-game.png "Classic Game")
-
-</br>
 A typical game can be played (two players, 7-wide grid, and 4 pieces to win).
+
 </br>
 
 ![Large game example](project-photos/Large-game.png "Large Game")
-
-</br>
 Game can be customized to have a large board (16x16 max). Note that the player has won in this match with 8 pieces. Larger boards can be compensated with a larger win condition, creating a much more strategic and high-impact game environment.
+
 </br>
 
 ![Small 4-player game example](project-photos/Small-game-4-players.png "Small 4-Player Game")
-
-</br>
 A game can be played with four players. Note that the player has won in this game with only three pieces. Smaller boards can be played with fewer connected pieces as a win condition creating a more possessive match for board space.
+
 </br>
 
 ![Game scoreboard keeps track of progress](project-photos/Game-scoreboard.png "Scoreboard Tracking")
-
-</br>
 The game will keep track of player progress, including wins and connected pieces during the game and subsequent plays.
+
 </br>
 
 ## How to play
