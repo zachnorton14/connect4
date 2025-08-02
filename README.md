@@ -1,6 +1,6 @@
 # Connect4
 
-### *Note:* This project was completed as a part of the NC State's CSC-116 course cirriculum.
+### *Note:* This project was completed as a part of NC State's CSC-116 course cirriculum.
 
 This was a group project, created outside GitHub. Contributors are: [Ethan Perez](https://github.com/ethan-d-perez), [Talha Djibril](), and Aidan Graves
 
